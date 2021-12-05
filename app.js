@@ -4,10 +4,10 @@ require("dotenv").config();
 
 const app = express();
 const amadeus = new Amadeus({
-  clientId: process.env.API_KEY,
-  clientSecret: process.env.API_SECRET,
+  clientId: process.env.pI7YjB7jHWDWHxPe0uTzx1Af4bMbsPza,
+  clientSecret: process.env.vp44UpuSeotv1ORT,
 });
-const port = 3000;
+const port = process.env.PORT;
 
 app.use(express.static("public"));
 app.get("/api/autocomplete", async (request, response) => {
